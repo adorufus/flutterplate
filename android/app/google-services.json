@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "500752126476",
+    "firebase_url": "https://id-pixle.firebaseio.com",
+    "project_id": "id-pixle",
+    "storage_bucket": "id-pixle.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500752126476:android:b0302d40c4f42e58d81429",
+        "android_client_info": {
+          "package_name": "com.example.newapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSdJhkoN1Pk8kvKVKw4LBa4u_8ewTWPYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500752126476:android:69bf2122bb470271",
+        "android_client_info": {
+          "package_name": "com.meduru.pixle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSdJhkoN1Pk8kvKVKw4LBa4u_8ewTWPYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
