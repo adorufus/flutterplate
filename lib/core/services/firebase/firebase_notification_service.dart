@@ -1,4 +1,5 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:get/get.dart';
 
 class FirebaseNotificationService {
   final FirebaseMessaging _messaging;
@@ -18,6 +19,10 @@ class FirebaseNotificationService {
       print(
         '[FCM] Foreground Message: ${message.notification?.title} - ${message.notification?.body}',
       );
+      Get.snackbar(
+        "New Notification",
+        message.notification?.title ?? "",
+      ).show();
       // Handle foreground notification here
     });
 
