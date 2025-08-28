@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:newapp/core/app_routes.dart';
-import 'package:newapp/core/services/firebase/firebase_analytic_service.dart';
-import 'package:newapp/core/services/local_storage_service.dart';
+import 'package:badiklat/core/app_routes.dart';
+import 'package:badiklat/core/services/firebase/firebase_analytic_service.dart';
+import 'package:badiklat/core/services/local_storage_service.dart';
 
 class AuthController extends GetxController {
   final FirebaseAnalyticService analyticService =

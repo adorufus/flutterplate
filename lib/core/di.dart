@@ -1,10 +1,10 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
-import 'package:newapp/core/services/firebase/firebase_analytic_service.dart';
-import 'package:newapp/core/services/firebase/firebase_notification_service.dart';
-import 'package:newapp/core/services/http.service.dart';
-import 'package:newapp/core/services/local_storage_service.dart';
+import 'package:badiklat/core/services/firebase/firebase_analytic_service.dart';
+import 'package:badiklat/core/services/firebase/firebase_notification_service.dart';
+import 'package:badiklat/core/services/http.service.dart';
+import 'package:badiklat/core/services/local_storage_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> initDependencies() async {

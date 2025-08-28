@@ -1,8 +1,8 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-import 'package:newapp/modules/auth/bindings.dart';
-import 'package:newapp/modules/auth/views/auth_view.dart';
-import 'package:newapp/modules/dashboard/bindings.dart';
-import 'package:newapp/modules/dashboard/views/dashboard_view.dart';
+import 'package:badiklat/modules/auth/bindings.dart';
+import 'package:badiklat/modules/auth/views/auth_view.dart';
+import 'package:badiklat/modules/dashboard/bindings.dart';
+import 'package:badiklat/modules/dashboard/views/dashboard_view.dart';
 
 class AppRoutes {
   static String authPath = '/auth';

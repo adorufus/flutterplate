@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
-import 'package:newapp/modules/auth/controllers/auth_controller.dart';
+import 'package:badiklat/modules/auth/controllers/auth_controller.dart';
 
 class AuthView extends GetView<AuthController> {
   const AuthView({super.key});

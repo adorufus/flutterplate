@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:newapp/modules/auth/controllers/auth_controller.dart';
+import 'package:badiklat/modules/auth/controllers/auth_controller.dart';
 
 class AuthBindings extends Bindings {
   @override

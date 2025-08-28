@@ -3,11 +3,11 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/route_manager.dart';
-import 'package:newapp/core/app_routes.dart';
-import 'package:newapp/core/di.dart';
-import 'package:newapp/core/services/firebase/firebase_analytic_service.dart';
-import 'package:newapp/core/services/firebase/firebase_notification_service.dart';
-import 'package:newapp/core/services/firebase/firebase_service.dart';
+import 'package:badiklat/core/app_routes.dart';
+import 'package:badiklat/core/di.dart';
+import 'package:badiklat/core/services/firebase/firebase_analytic_service.dart';
+import 'package:badiklat/core/services/firebase/firebase_notification_service.dart';
+import 'package:badiklat/core/services/firebase/firebase_service.dart';
 
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
