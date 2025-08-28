@@ -1,11 +1,18 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/route_manager.dart';
 import 'package:newapp/core/app_routes.dart';
 import 'package:newapp/core/di.dart';
 import 'package:newapp/core/services/firebase/firebase_analytic_service.dart';
+import 'package:newapp/core/services/firebase/firebase_notification_service.dart';
 import 'package:newapp/core/services/firebase/firebase_service.dart';
+
+@pragma('vm:entry-point')
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  print("Handling a background message: ${message.notification!.body}");
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +22,11 @@ void main() async {
   final FirebaseAnalyticService analyticService =
       Get.find<FirebaseAnalyticService>();
   analyticService.logEvent("test_event", parameters: {'debug': "true"});
+
+  final FirebaseNotificationService notificationService =
+      Get.find<FirebaseNotificationService>();
+  notificationService.initialize();
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
   runApp(const MyApp());
 }
