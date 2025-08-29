@@ -1,3 +1,6 @@
+import 'package:badiklat/modules/auth/controllers/auth_controller.dart';
+import 'package:badiklat/remote/datasources/auth_datasource.dart';
+import 'package:badiklat/remote/repositories/auth_repository.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
@@ -20,4 +23,16 @@ Future<void> initDependencies() async {
   Get.put<FirebaseAnalyticService>(FirebaseAnalyticService(analytics));
   final FirebaseMessaging messaging = FirebaseMessaging.instance;
   Get.put<FirebaseNotificationService>(FirebaseNotificationService(messaging));
+
+  //global datasources
+  final AuthDatasource authDatasource = AuthDatasource(httpService);
+  Get.put<AuthDatasource>(authDatasource);
+
+  //global repositories
+  final AuthRepository authRepository = AuthRepository(authDatasource);
+  Get.put<AuthRepository>(authRepository);
+
+  //global controllers
+  final AuthController authController = AuthController(authRepository);
+  Get.put<AuthController>(authController);
 }
