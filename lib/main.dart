@@ -40,6 +40,7 @@ class MyApp extends StatelessWidget {
 
     return GetMaterialApp(
       title: 'Badiklat',
+      debugShowCheckedModeBanner: false,
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: analyticService.analytics),
       ],

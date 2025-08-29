@@ -22,7 +22,7 @@ class AuthController extends GetxController {
       ) {
         print(res);
       });
-      Get.toNamed(AppRoutes.dashboardPath);
+      Get.toNamed(AppRoutes.dashboardPath, arguments: {'is_skip_auth': false});
     });
   }
 }
